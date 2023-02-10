@@ -1,0 +1,157 @@
+:root{
+    --cor-principal: #EA1C81;
+    --cor-topo: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-fundo: #FAFBFF;
+    --padding: 25px;
+} 
+
+*{
+    /* margem */
+    margin: 0px;
+    padding: 0px;
+    transition: all 1s; /* tempo de transição */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: var(--cor-topo); /* mudar a cor*/
+    display: flex; /* deixa a escrita flexivel */
+    justify-content: space-between; /* colocar espaço entre logo e escrita */
+    padding: 20px; /* espaçamento interno*/
+    align-items: center;  /* alinha o texto no eixo Y/centralizar */
+}
+
+/* especificação dos filhos, SISTEMA CASCATA */
+#header nav a{
+    text-decoration: none; /*tirar a sublimação embaixo da escrita*/
+    color: var(--cor-preta); /*mudar a cor da letra*/
+
+}
+
+#header nav a:hover{
+    background-color: var(--cor-principal); /*deixa a palavra grifada com outra cor*/
+    padding: 15px; /*espaçamento interno*/
+    color: var(--cor-branca); /*a letra da palavra muda de cor*/
+    border-radius: 20px; /*borda arredondada*/
+    /*font-weight: 700; - muda a grossura da fonte*/
+    /*font-weight: bold; - deixa a escrita em negirto*/
+}
+
+.marginLatetal{
+    margin: 0px 20px; /*espaçamento entre as palavras*/
+}
+
+.margin{
+    margin: 20px 0px; /*espaçamento entre as palavras*/
+}
+
+main #banner{
+    background-image: url("../img/dogtriste.png");
+    height: calc(100vh - 89px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-principal);
+}
+
+main #banner button{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+main #banner button:hover{
+    cursor: pointer; /*mudar o cursor, virar uma mãozinha*/
+}
+
+    main #bemVindo{
+        background: var(--cor-branca);
+        display: grid; /*dividir a tela*/
+        grid-template-columns: 1fr 1fr; /*repeat=repete a quantidade de fr/espaçamento*/
+        gap: 25px; /*espaço entre os itens da grid*/
+        padding: 40px;
+    }
+
+    main #bemVindo #div-bemVindo h3{
+        color: var(--cor-principal);
+    }
+
+    main #bemVindo p{
+        line-height: 140.69%;
+    }
+
+    main #beneficios{
+        background-color: var(--cor-fundo);
+    }
+
+    main #beneficios #beneficios-1, main #beneficios{
+        color: var(--cor-principal);
+    }
+
+    main #beneficios #beneficios-1, 
+    main #form #form-texto,
+    main #beneficios #servico,
+    #rodape, 
+    #form-formulario{
+        text-align: center;
+        
+    }
+
+    main #beneficios #servico{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: var(--padding);
+    }
+
+    main #form #form-formulario form, #formulario-submit, #formulario-cadastro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    main #form #form-formulario form input
+    {
+        display: block;
+        padding: 8px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        border-radius: 10px;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    
+    main #form #form-formulario form button, 
+    main #formulario-submit form button, 
+    main #formulario-cadastro form button{
+        padding: 8px;
+        border: none;
+        background-color: var(--cor-principal);
+        color: var(--cor-branca);
+        border-radius: 10px;
+        width: 300;
+        cursor: pointer;
+    }
+
+    main #form #form-formulario{
+        background-image: url(../img/dogdodoi.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #rodape{
+        background-color: var(--cor-topo);
+        padding: var(--padding)
+    }
+
