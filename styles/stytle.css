@@ -101,7 +101,7 @@ main #banner button:hover{
     main #form #form-texto,
     main #beneficios #servico,
     #rodape, 
-    #form-formulario{
+    main #form-formulario{
         text-align: center;
         
     }
@@ -112,7 +112,7 @@ main #banner button:hover{
         padding: var(--padding);
     }
 
-    main #form #form-formulario form, #formulario-submit, #formulario-cadastro{
+    main #form #form-formulario form{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -120,8 +120,9 @@ main #banner button:hover{
         padding: 15px;
     }
 
-    main #form #form-formulario form input
-    {
+    main #form #form-formulario form input,
+    #formulario-cadastro form input,
+    #form-formulario-senha form input{
         display: block;
         padding: 8px;
         border: none;
@@ -132,16 +133,17 @@ main #banner button:hover{
         margin-bottom: 10px;
     }
     
-    main #form #form-formulario form button, 
-    main #formulario-submit form button, 
-    main #formulario-cadastro form button{
+    main #form #form-formulario form button{
         padding: 8px;
         border: none;
         background-color: var(--cor-principal);
         color: var(--cor-branca);
         border-radius: 10px;
-        width: 300;
+        width: 200px;
         cursor: pointer;
+        display:block;
+        justify-content: center;
+        align-items: center;
     }
 
     main #form #form-formulario{
@@ -155,3 +157,15 @@ main #banner button:hover{
         padding: var(--padding)
     }
 
+    main #formulario-submit, #formulario-cadastro{
+        padding: 8px;
+        border: none;
+        background-color: var(--cor-principal);
+        color: var(--cor-branca);
+        border-radius: 10px;
+        width: 200px;
+        cursor: pointer;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
